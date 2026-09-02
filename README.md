@@ -6,8 +6,7 @@ any game system.
 
 ## Install
 
-**The easy way (Windows):** download the SpazzMods installer
-(https://github.com/Spazzletopia-Studios/spazzmods-installer/releases/latest),
+**The easy way (Windows):** download the [SpazzMods Installer](https://github.com/Spazzletopia-Studios/spazzmods-installer/releases/latest),
 run it, and click Install on SpazzMods Hub. No account needed.
 
 **Without the installer:** paste this into Foundry's **Install Module →
@@ -16,10 +15,21 @@ Manifest URL** box:
 
 ## Using it
 
+- Select **SpazzMods** at the bottom of the scene controls and click the store,
+  open the **SpazzMods Hub** button in the Settings sidebar tab, use the
+  **Open the Hub** button in the module's own settings, or run
+  `game.spazzmodsHub.open()` from a macro or the console.
 - One window lists every SpazzMods module — free and premium — each with a
-  one-line pitch.
+  one-line pitch. Search the list or filter it by On, Off, Updates, and
+  Missing.
+- Descriptions stay folded until you open the row. Open rows, the selected
+  filter, the search text, focus, and list position survive catalog redraws.
 - Your installed version sits next to the latest release, with an
   **Update available** flag when you are behind.
+- A GM can stage installed modules on or off, review the full set of changes,
+  then apply them with one world reload. Required dependencies are turned on
+  with their parent and cannot be turned off while another active module needs
+  them. Players keep the same list in read-only mode.
 - Free rows link to their public GitHub repo. Premium rows link to the
   SpazzMods Supporter Patreon tier.
 - A **Get the Installer** button in the window gets you the one-click
@@ -27,5 +37,44 @@ Manifest URL** box:
 - Works offline — the catalog paints right away, and a quiet note appears
   only if the live version check cannot reach the server.
 
-Part of SpazzMods — free modules and a $10/month premium catalog:
-https://www.patreon.com/user?u=224896501
+---
+
+**Foundry v13–v14 · any game system** (the hub itself needs no system; the
+modules it lists are for Pathfinder Second Edition).
+
+## Settings
+
+| Setting | Scope | Notes |
+|---|---|---|
+| Catalog server URL | world (GM) | Where the hub fetches the catalog. Leave as default. |
+| Patron token | client | Your SpazzMods Supporter token, if you have one. Stored on this computer only — never replicated to other players. Lets the hub show live versions for premium modules. |
+
+## Optional scene-control owner
+
+The Hub is the canonical owner of the shared **SpazzMods** scene-control API at
+`game.spazzmodsHub.sceneControls.addTool(controls, tool)`. SpazzMods packages
+use it when the Hub is active. Each package also keeps a small local fallback,
+so the Hub is never a required dependency and disabling it never removes that
+package's tools. Repeated registrations merge by tool name without duplicates.
+
+The Hub also discovers active Downtime Suite, Campfire Kitchen, Earn Income,
+NPC Dispositions, and Rest Flow installs and adds launchers for them. Their
+existing Token Controls buttons remain in place. Missing packages are left out.
+
+## Zero AI
+
+This module contains no AI-generated assets. Its icons are Foundry's bundled
+Font Awesome set; there are no images at all.
+
+## Fonts
+
+Ships local copies of **Cinzel** and **Cinzel Decorative** (in `fonts/`),
+redistributed under the SIL Open Font License — see `fonts/OFL-Cinzel.txt`.
+The window wears the Spazzletopia midnight look on its own; with the
+**Spazzletopia Theme** module installed, its palette takes over via the shared
+`--spz-*` custom properties.
+
+## Legal
+
+Not affiliated with or endorsed by Paizo or Foundry Gaming. Pathfinder is a
+trademark of Paizo Inc. See LICENSE.
