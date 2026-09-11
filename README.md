@@ -31,7 +31,9 @@ Manifest URL** box:
   with their parent and cannot be turned off while another active module needs
   them. Players keep the same list in read-only mode.
 - Free rows link to their public GitHub repo. Premium rows link to the
-  SpazzMods Supporter Patreon tier.
+  SpazzMods Supporter tier or Complete tier on Patreon.
+  Complete includes Supporter and Subsystem Forge. Row badges show the product's
+  plan, not proof of your membership. The gate still decides download access.
 - A **Get the Installer** button in the window gets you the one-click
   installer for the whole catalog.
 - Works offline — the catalog paints right away, and a quiet note appears
@@ -47,7 +49,7 @@ modules it lists are for Pathfinder Second Edition).
 | Setting | Scope | Notes |
 |---|---|---|
 | Catalog server URL | world (GM) | Where the hub fetches the catalog. Leave as default. |
-| Patron token | client | Your SpazzMods Supporter token, if you have one. Stored on this computer only — never replicated to other players. Lets the hub show live versions for premium modules. |
+| Patron token | client | Your Supporter or Complete token, if you have one. Stored on this computer only — never replicated to other players. Shows live versions for modules in your membership. |
 
 ## Optional scene-control owner
 
@@ -58,8 +60,24 @@ so the Hub is never a required dependency and disabling it never removes that
 package's tools. Repeated registrations merge by tool name without duplicates.
 
 The Hub also discovers active Downtime Suite, Campfire Kitchen, Earn Income,
-NPC Dispositions, and Rest Flow installs and adds launchers for them. Their
+Subsystem Forge's Reputation page, and Rest Flow installs and adds launchers for them. Their
 existing Token Controls buttons remain in place. Missing packages are left out.
+
+## Character and NPC sheet tools
+
+On PF2e's character and NPC sheets (including token NPC sheets), **SpazzMods** groups existing header controls for
+Runes, Level Up, Add Item Spellcasting, Staff Nexus, Fling Magic, Talent Trees,
+Living Shop, and Ultimate Shapeshift's Forms. Only controls the owning module
+already displays are included. NPCs get their own eligible tools, such as
+Talent Trees and Runes, not character-only actions. Token, Sheet, Close, and other authors' tools
+stay in the header. Click outside or press Escape to close the dropdown.
+
+This is optional Hub behavior. Without the Hub, each module keeps its normal
+header controls. No other module needs changes or a new dependency. Future
+modules can mark their own header node with `data-spazzmods-sheet-tool`; they
+still own its visibility, click and keyboard handlers. The Hub moves the node
+without copying callbacks or changing the character. The current PF2e AppV1
+sheet is covered; this does not replace AppV2's built-in controls menu.
 
 ## Zero AI
 
