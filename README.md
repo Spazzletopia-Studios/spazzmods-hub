@@ -27,9 +27,11 @@ Manifest URL** box:
 - Your installed version sits next to the latest release, with an
   **Update available** flag when you are behind.
 - A GM can stage installed modules on or off, review the full set of changes,
+  using each row's switch or **All modules** to change the whole installed catalog,
   then apply them with one world reload. Required dependencies are turned on
   with their parent and cannot be turned off while another active module needs
   them. Players keep the same list in read-only mode.
+  The master switch keeps Hub and world-required modules on.
 - Free rows link to their public GitHub repo. Premium rows link to the
   SpazzMods Supporter tier or Complete tier on Patreon.
   Complete includes Supporter and Subsystem Forge. Row badges show the product's
@@ -59,7 +61,8 @@ use it when the Hub is active. Each package also keeps a small local fallback,
 so the Hub is never a required dependency and disabling it never removes that
 package's tools. Repeated registrations merge by tool name without duplicates.
 
-The Hub also discovers active Downtime Suite, Campfire Kitchen, Earn Income,
+The Hub also discovers active Downtime Suite, Field & Flame (and the legacy
+standalone Campfire Kitchen), Earn Income,
 Subsystem Forge's Reputation page, and Rest Flow installs and adds launchers for them. Their
 existing Token Controls buttons remain in place. Missing packages are left out.
 
