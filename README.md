@@ -99,3 +99,7 @@ The window wears the Spazzletopia midnight look on its own; with the
 
 Not affiliated with or endorsed by Paizo or Foundry Gaming. Pathfinder is a
 trademark of Paizo Inc. See LICENSE.
+
+## Get help
+
+[Get Help](https://github.com/Spazzletopia-Studios/spazzmods-support) — report a bug, get install help, ask a question, or suggest an idea.
