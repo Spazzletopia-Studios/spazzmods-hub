@@ -38,8 +38,17 @@ Manifest URL** box:
   plan, not proof of your membership. The gate still decides download access.
 - A **Get the Installer** button in the window gets you the one-click
   installer for the whole catalog.
+- **Get Help** in the window opens the [SpazzMods Support](https://github.com/Spazzletopia-Studios/spazzmods-support)
+  guide for setup and live troubleshooting.
 - Works offline — the catalog paints right away, and a quiet note appears
   only if the live version check cannot reach the server.
+
+## Setup and live support
+
+Start with the [SpazzMods Support guide](https://github.com/Spazzletopia-Studios/spazzmods-support)
+for installation, Foundry/PF2e version details, and live troubleshooting. When
+reporting a problem, include the module version, Foundry and PF2e versions, the
+exact action that failed, and any console error text.
 
 ---
 
@@ -99,7 +108,3 @@ The window wears the Spazzletopia midnight look on its own; with the
 
 Not affiliated with or endorsed by Paizo or Foundry Gaming. Pathfinder is a
 trademark of Paizo Inc. See LICENSE.
-
-## Get help
-
-[Get Help](https://github.com/Spazzletopia-Studios/spazzmods-support) — report a bug, get install help, ask a question, or suggest an idea.
