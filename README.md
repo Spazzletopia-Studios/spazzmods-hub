@@ -25,7 +25,12 @@ Manifest URL** box:
 - Descriptions stay folded until you open the row. Open rows, the selected
   filter, the search text, focus, and list position survive catalog redraws.
 - Your installed version sits next to the latest release, with an
-  **Update available** flag when you are behind.
+  **Update available** flag when you are behind and the new version runs in
+  this world.
+- Each module is checked against this world's Foundry and game-system
+  versions (shown under the plans line). A module that cannot run here says
+  **Can't run** and why, for example "Needs Foundry 14" or "Needs PF2e 8.0.0
+  or newer". Its switch cannot turn it on, and **All modules** skips it.
 - A GM can stage installed modules on or off, review the full set of changes,
   using each row's switch or **All modules** to change the whole installed catalog,
   then apply them with one world reload. Required dependencies are turned on
@@ -70,8 +75,7 @@ use it when the Hub is active. Each package also keeps a small local fallback,
 so the Hub is never a required dependency and disabling it never removes that
 package's tools. Repeated registrations merge by tool name without duplicates.
 
-The Hub also discovers active Downtime Suite, Field & Flame (and the legacy
-standalone Campfire Kitchen), Earn Income,
+The Hub also discovers active Downtime Suite, Field & Flame, Earn Income,
 Subsystem Forge's Reputation page, and Rest Flow installs and adds launchers for them. Their
 existing Token Controls buttons remain in place. Missing packages are left out.
 
