@@ -19,11 +19,14 @@ Manifest URL** box:
   open the **SpazzMods Hub** button in the Settings sidebar tab, use the
   **Open the Hub** button in the module's own settings, or run
   `game.spazzmodsHub.open()` from a macro or the console.
-- One window lists every SpazzMods module — free and premium — each with a
-  one-line pitch. Search the list or filter it by On, Off, Updates, and
-  Missing.
-- Descriptions stay folded until you open the row. Open rows, the selected
-  filter, the search text, focus, and list position survive catalog redraws.
+- One window lists every SpazzMods module for this world's game system — free
+  and premium. The list on the left has one line per module: a state dot, the
+  name and its plan. Search it, or filter it by On, Off, Updates (Upd) and
+  Missing (Miss).
+- Click a module, or move with the arrow keys, to see its card on the right:
+  the pitch, plan, installed and latest versions, its link and its switch.
+  The selected module, filter, search text, focus and both scroll positions
+  survive catalog redraws.
 - Your installed version sits next to the latest release, with an
   **Update available** flag when you are behind and the new version runs in
   this world.
@@ -31,9 +34,15 @@ Manifest URL** box:
   versions (shown under the plans line). A module that cannot run here says
   **Can't run** and why, for example "Needs Foundry 14" or "Needs PF2e 8.0.0
   or newer". Its switch cannot turn it on, and **All modules** skips it.
+  When an older version of that module does run here, the row names it
+  ("Needs Foundry 14 · 1.11.2 runs here"); the SpazzMods Installer installs
+  that version.
+- Only released modules are listed. A module that is not published yet shows
+  only in a world where it is already installed. Live versions of every module,
+  premium ones too, show without a patron token.
 - A GM can stage installed modules on or off, review the full set of changes,
-  using each row's switch or **All modules** to change the whole installed catalog,
-  then apply them with one world reload. Required dependencies are turned on
+  using each card's switch or **All modules** in the bottom bar to change the
+  whole installed catalog, then apply them with one world reload. Required dependencies are turned on
   with their parent and cannot be turned off while another active module needs
   them. Players keep the same list in read-only mode.
   The master switch keeps Hub and world-required modules on.
@@ -57,15 +66,16 @@ exact action that failed, and any console error text.
 
 ---
 
-**Foundry v13–v14 · any game system** (the hub itself needs no system; the
-modules it lists are for Pathfinder Second Edition).
+**Foundry v13–v14 · any game system** (the hub itself needs no system; it
+lists the modules made for the world's system, Pathfinder Second Edition or
+5E).
 
 ## Settings
 
 | Setting | Scope | Notes |
 |---|---|---|
 | Catalog server URL | world (GM) | Where the hub fetches the catalog. Leave as default. |
-| Patron token | client | Your Supporter or Complete token, if you have one. Stored on this computer only — never replicated to other players. Shows live versions for modules in your membership. |
+| Patron token | client | No longer needed since 0.8.0: live versions of every module show without it. Kept so an entered token is not lost; stored on this computer only, never replicated to other players. |
 
 ## Optional scene-control owner
 
