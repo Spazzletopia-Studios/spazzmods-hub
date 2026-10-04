@@ -1,10 +1,22 @@
 # SpazzMods Hub
 
-An in-app storefront window that lists every SpazzMods module, shows which
-ones you have and whether they are up to date. Free for any Foundry world,
-any game system.
+## Purpose and features
 
-## Install
+See your SpazzMods tools in one place, check for updates, and find the right
+download. The Hub is free and works with any Foundry game system.
+
+- Browse released free and premium tools made for your world's system.
+- See which tools are installed, active, missing, or need an update.
+- Check whether a version can run in your current world.
+- As a GM, turn installed tools on or off with one reviewed world reload.
+- Group supported scene tools and PF2e sheet tools under **SpazzMods**.
+
+The Hub is a catalog and launcher. It does not install an update itself;
+use the Installer or Foundry's module installer for that.
+
+## Setup
+
+Requires Foundry V13 or V14. No game system or other module is required.
 
 **The easy way (Windows):** download the [SpazzMods Installer](https://github.com/Spazzletopia-Studios/spazzmods-installer/releases/latest),
 run it, and click Install on SpazzMods Hub. No account needed.
@@ -13,7 +25,23 @@ run it, and click Install on SpazzMods Hub. No account needed.
 Manifest URL** box:
 `https://github.com/Spazzletopia-Studios/spazzmods-hub/releases/latest/download/module.json`
 
-## Using it
+After installing, open your world and enable **SpazzMods Hub** in
+**Manage Modules**.
+
+## Quick start
+
+1. Open the **Settings** sidebar tab and click **SpazzMods Hub**. You can also
+   select **SpazzMods** in the left scene controls and click the store icon.
+2. Search for a tool or select a row on the left.
+3. Read its purpose, plan, installed version, and latest version on the right.
+4. To install or update it, click **Get the Installer**. A free tool's link
+   opens GitHub; a premium tool's link opens Patreon.
+5. To enable an installed tool, a GM can change its switch, review the pending
+   changes, then choose **Apply & Reload**. This reloads the world for everyone.
+
+Players can browse the same catalog, but cannot change world module switches.
+
+## Detailed use
 
 - Select **SpazzMods** at the bottom of the scene controls and click the store,
   open the **SpazzMods Hub** button in the Settings sidebar tab, use the
